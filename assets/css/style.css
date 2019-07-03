@@ -1,0 +1,329 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Alegreya Sans SC', serif;
+	color: 	#0679FF;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.nav {
+	background-color: #0679FF;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+}
+
+.main {
+	background-color: (75, 72, 86, 0.5);
+	margin-left: 200px;
+}
+
+.banner {
+	background-color: #A4CD4B;
+	height: 100vh;
+		/*VH: Viewport Height: responsive to the size of screen as opposed to PX*/;
+	position: relative;
+	background-image: url(../images/farm3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+/*.banner:hover ~ #back {
+	z-index: -100;
+}
+*/
+
+#back {
+	position: fixed;
+	bottom: 5%;
+	right: 5%;
+
+}
+
+ul > li:hover {
+	background-color: #6CB90D;
+	/*border: 3px solid #c2195b;*/
+	border: 4px solid #ab7709;
+	transition: 0.1s;
+}
+
+/*.li:hover {
+	color: black;
+}
+*/
+
+ul > li:hover > a {
+	color: 	#0679FF;
+}
+
+
+h1 {
+	font-size: 80px;
+}
+
+h2 {
+	font-size: 40px;
+	font-family: 'Italianno', serif;
+	color: #A4CD4B;
+}
+
+
+.box > p {
+	font-family: Raleway, san-serif;
+	font-size: 12px;
+}
+
+.box {
+	text-align: center;
+	background-color: rgba(171,119,9, 0.5);
+	font-family: 'Alegreya Sans SC', serif;
+	width: 60%;
+	padding: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.register {
+	height: 100vh;
+	background-color: #d5ff80;
+	position: relative;
+}
+
+form {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,255,255, 0.75);
+	padding: 30px;
+	border-radius: 10px;
+	color: black;
+}
+
+.form-control {
+	width: 100%;
+	height: 30px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+
+}
+
+.user-alert {
+	background-color: green;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 50%;
+	margin: 0 auto;
+	display: none;
+	/*visibility: hidden;*/
+}
+
+.email-alert {
+	background-color: red;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	width: 50%;
+	margin: 0 auto;
+	display: none;
+	/*visibility: hidden;*/
+}
+
+
+#name:focus {
+	background-color: lightblue;
+
+
+}
+
+#name:focus ~ .user-alert {
+	color: black;
+	background-color: green;
+	display: block;
+	visibility: visible;
+}
+
+#email:focus ~.email-alert {
+background-color: red;
+display: block;
+visibility: visible;
+
+}
+
+
+.btn-block {
+	background-color: #0679FF;
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding: 10px 30px;
+}
+
+.about {
+	height: 100vh;
+	background-color: #661a00;
+}
+
+.about p {
+	background-color: white;
+}
+
+.about #us {
+	font-size: xx-large;
+}
+
+.products {
+	height: 100vh;
+	background-color: #d5ff80;
+}
+
+.products #prod {
+	font-size: xx-large;
+}
+
+.products img {
+	width: 200px;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.products #product1 {
+	float: left;
+	padding-left: 250px;
+}
+
+.products #product2 {
+	float: right;
+	padding-right: 250px;
+}
+
+.gallery {
+	height: 100vh;
+	background-color: #661a00;
+}
+
+.gallery #galle {
+	font-size: xx-large;
+}
+
+.gallery img {
+	width: 250px;
+	height: 200px;
+	margin-top: 100px;
+	padding: 22px;
+}
+
+#aboutimg {
+	float: left;
+	width: 475px;
+	height: 300px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*child selector (>)*/
+ul > li {
+	list-style: none;
+	background-color: lightblue;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 48px; /*==Multipled by 3 to center text*/
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 3px solid #333;
+/*	border: 4px solid #ab7709;*/
+
+}
+
+ul > li > a {
+	text-decoration: none;
+	color: #fff; 
+	font-weight: 700;
+	/*padding: 10px 30px;*/
+}
+
+.logo {
+	height: 140px;
+	width: 140px;
+	margin: 0 auto;
+	border-radius: 100%;
+	margin-bottom: 16px;
+	border: 4px solid #ab7709;
+}
+
+.nav,
+.banner,
+.register,
+.about,
+.products, 
+.gallery {
+	padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE STYLES*/
+
+@media only screen and (max-width: 400px) {
+	.nav {
+		display: none;
+	}
+	.main {
+		margin-left: 0px;
+	}
+}
+
+/*TABLET STYLE*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.nav {
+		display: none;
+	}
+	.main {
+		margin-left: 0px;
+	}
+}
+
+/*DESKTOP STYLE*/
+@media only screen and (min-width: 961px) {
+}
